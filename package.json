@@ -11,7 +11,7 @@
     "lint-fix": "./node_modules/.bin/eslint scr/** --fix",
     "start": "npm run start-dev && node ./.build/server.js",
     "precommit": "npm run lint",
-    "test": "nyc ./node_modules/.bin/ava -v",
+    "test": "./node_modules/mocha/bin/mocha test/index.js",
     "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls",
     "standard": "npm run lint"
   },
