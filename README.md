@@ -5,4 +5,4 @@ The boilerplate node application with es6
 
 
 
-
+[![Coverage Status](https://coveralls.io/repos/github/arunnattarayan/node-babel-api-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/arunnattarayan/node-babel-api-boilerplate?branch=master)
