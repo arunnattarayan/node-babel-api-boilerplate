@@ -13,5 +13,6 @@ module.exports = {
     'sourceType': 'module'
   },
   'rules': {
+    'semi': [1, 'always']
   }
 }

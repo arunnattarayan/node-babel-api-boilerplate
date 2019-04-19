@@ -1,14 +1,14 @@
 import Config from './config';
 
 class Production extends Config {
+  constructor () {
+    super();
+    this.prodConfig();
+  }
 
-    constructor() {
-		super();
-	}
-
-	prodConfig() {
-		return this.config
-	}
+  prodConfig () {
+    return this.config;
+  }
 }
 
 export default new Production().prodConfig();

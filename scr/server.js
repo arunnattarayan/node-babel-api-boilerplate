@@ -3,10 +3,8 @@ import Express from './config/express-middleware';
 
 let serverInstace = null;
 
-
 export default new class Server extends Express {
-
-  constructor() {
+  constructor () {
     super();
     const config = Environment.config;
     const port = config.PORT;
@@ -15,5 +13,4 @@ export default new class Server extends Express {
       serverInstace = 'serverInstace';
     }
   }
-
-}
+}();
