@@ -14,4 +14,8 @@ export default new class Logger {
   get loggerMiddlerware () {
     return this.logger;
   }
+
+  get devLogger () {
+    return morgan('dev');
+  }
 }();

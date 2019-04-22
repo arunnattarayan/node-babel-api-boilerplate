@@ -13,7 +13,8 @@
     "precommit": "npm run lint",
     "test": "./node_modules/mocha/bin/mocha test/index.js",
     "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls",
-    "standard": "npm run lint"
+    "standard": "npm run lint",
+    "debug": "npm start"
   },
   "standard": {
     "parser": "babel-eslint"
@@ -49,12 +50,16 @@
     "standard": "^8.4.0"
   },
   "dependencies": {
+    "bcrypt": "^3.0.6",
     "body-parser": "^1.18.3",
     "chai": "^4.2.0",
     "cookie-parser": "^1.4.4",
     "dotenv": "^7.0.0",
     "express": "^4.16.4",
-    "morgan": "^1.9.1"
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.5.2",
+    "morgan": "^1.9.1",
+    "validator": "^10.11.0"
   },
   "config": {
     "ghooks": {

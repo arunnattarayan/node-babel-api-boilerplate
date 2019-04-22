@@ -4,6 +4,7 @@ class Development extends Config {
   constructor () {
     process.env['NODE_ENV'] = 'development';
     super();
+    this.JWT_TOKEN_SECRECT = 'RESTFULAPIs';
   }
 
   devConfig () {
