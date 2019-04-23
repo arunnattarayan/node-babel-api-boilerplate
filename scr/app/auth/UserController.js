@@ -4,7 +4,7 @@ class UserController {
   login (req, res) {
     let body = req.body;
     UserService.isValidUser(body)
-      .then((token) => res.status(201).send({ token: token }))
+      .then((token) => res.status(200).send({ token: token }))
       .catch((err) => res.status(500).send({ error: err.message }));
   }
 

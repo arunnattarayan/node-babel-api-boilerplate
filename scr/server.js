@@ -6,6 +6,7 @@ const config = Environment.config;
 
 export default new class Server extends Express {
   constructor () {
+    console.log(config);
     super(config);
     const port = config.PORT;
     if (!serverInstace) {
@@ -18,5 +19,9 @@ export default new class Server extends Express {
   DB () {
     const db = new DBConection();
     db.errorHandler();
+  }
+
+  expressApp () {
+    return this.app;
   }
 }();
