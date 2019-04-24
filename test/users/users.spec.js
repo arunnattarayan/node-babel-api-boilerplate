@@ -8,6 +8,9 @@ import {
 } from '../shared.spec';
 
 var jwtToken;
+after( () => {
+  process.exit(0);
+});
 describe('# Project Auth APIs', () => {
   it('User should able to register', (done) => {
     registerDefaultUser()
