@@ -20,7 +20,7 @@
       "./test/helpers/some-helper.js"
     ],
     "extension": [
-      ".jsx"
+      ".js"
     ],
     "cache": true,
     "all": true,

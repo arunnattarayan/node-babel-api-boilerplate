@@ -14,8 +14,7 @@
     "start": "npm run start-dev && node ./.build/server.js",
     "test": "cross-env NODE_ENV=test nyc --reporter=html --reporter=text ./node_modules/mocha/bin/mocha --require @babel/register test/**",
     "standard": "npm run lint",
-    "coverage": "nyc report --reporter=text-lcov | coveralls",
-    "debug": "npm start"
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "standard": {
     "parser": "babel-eslint"
