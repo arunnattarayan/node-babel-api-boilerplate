@@ -7,5 +7,12 @@
         }
       }
     ]
-  ]
+  ],
+  "env": {
+    "test": {
+      "plugins": [
+        "istanbul"
+      ]
+    }
+  }
 }
